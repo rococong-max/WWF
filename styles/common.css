@@ -1,0 +1,32 @@
+/* 공통 common.css */
+#wrap {}
+#wrap * {transition: all 0.3s;}
+#wrap .container {
+    min-width: 320px;
+}
+/* mobile design - .sponsor_btn */
+#wrap .container .sponsor_btn {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+    width: 164px; height: 41px; border-radius: 37.5px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #FE9300, #FF7300);
+    /* gap :10px; == em의 margin-right:10px; */
+    /* position: relative; z-index: 900; */
+}
+#wrap .container .sponsor_btn:hover {
+    animation: btn 1s linear alternate infinite;
+}
+#wrap .container .sponsor_btn em {
+    color:#fff; font-weight: 500;  margin-right: 10px;
+}
+#wrap .container .sponsor_btn::after {
+    content:'>'; display: block;
+    /*  display:inline-block; - 부모 .sponsor_btn으로 정렬을 했기때문에 굳이 inline-block일 필요없음 */
+    color: #fff; font-size: 0.75rem;
+}
+/* ---------------------애니메이션 효과 */
+@keyframes btn {
+    0% {box-shadow: #fff 0 0 5px}
+    100% {box-shadow: #fff 0 0 20px;}
+}
