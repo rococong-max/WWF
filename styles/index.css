@@ -39,3 +39,66 @@
 #wrap .intro h1 span:nth-child(1) {}
 #wrap .intro h1 span:nth-child(2) {}
 #wrap .intro .sponsor_btn {}
+/* -------------------------------------------2. quiz */
+#wrap .quiz_bg {
+    background: url(../images/quiz_bg.png);
+    background-position: center; background-size: cover;
+    padding: 70px;/* padding은 부모에 작성 */
+}
+#wrap .quiz_bg .quiz {
+    display: flex; flex-flow: column nowrap; gap: 50px;/* t,d - row */
+    justify-content: center; align-items: center;
+}
+#wrap .quiz_bg .quiz .quiz_list {/* margin-bottom: 50px; */}
+/* ------------------------ 그룹 */
+#wrap .quiz_bg .quiz .quiz_list h1,
+#wrap .quiz_bg .quiz .quiz_list h2 span,
+#wrap .quiz_bg .quiz .quiz_list form ul li label,
+#wrap .quiz_bg .quiz .quiz_list #answer_form #check_btn,
+#wrap .quiz_bg .quiz .quiz_status p {color: #fff;}
+#wrap .quiz_bg .quiz .quiz_list h1,
+#wrap .quiz_bg .quiz .quiz_list h2 {margin-bottom: 16px;}
+/* ------------------------ 개별 */
+#wrap .quiz_bg .quiz .quiz_list h1 {
+    font-size: 1.5rem; font-weight: 500;
+    line-height: 1.2; letter-spacing: -0.01rem;
+    font-family: 'Noto Sans Kr', sans-serif; /* 단독글꼴인 경우 */
+}
+#wrap .quiz_bg .quiz .quiz_list h2 {}
+#wrap .quiz_bg .quiz .quiz_list h2 span {display: block; line-height: 1.7;}
+#wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(1) {}
+#wrap .quiz_bg .quiz .quiz_list h2 span:nth-child(2) {}
+#wrap .quiz_bg .quiz .quiz_list #answer_form {}
+#wrap .quiz_bg .quiz .quiz_list #answer_form ul {margin-bottom: 16px;}
+#wrap .quiz_bg .quiz .quiz_list #answer_form ul li {margin-bottom: 16px;}
+#wrap .quiz_bg .quiz .quiz_list #answer_form ul li:last-child {margin-bottom: 0;}
+#wrap .quiz_bg .quiz .quiz_list #answer_form ul li input {display: none;}
+#wrap .quiz_bg .quiz .quiz_list #answer_form ul li input:checked + label {
+    background-image: url(../images/chk_on.svg);
+}
+#wrap .quiz_bg .quiz .quiz_list #answer_form ul li label {
+    font-size: 0.88rem; /* line-height: 1.7;  위에서 행간을 포함한 값으로 여백을 주었기 때문에 생략*/
+    /* margin-left: 31.75px; input태그를 안보이도록 만들 것이기 때문에 없어도 됨 */
+    transition: color 0.3s;
+    background-image: url(../images/chk_off.svg);
+    background-size: 16px; background-repeat: no-repeat;
+    padding-left: 47.75px; /* 백그라운드로 깔리는 이미지이므로 이미지를 무시한 거리 값 입력 */
+}
+#wrap .quiz_bg .quiz .quiz_list #answer_form ul li:hover label {
+    color: #FF7300;
+}
+#wrap .quiz_bg .quiz .quiz_list #answer_form #check_btn {
+    width: 100%; padding:10px 0;
+    border-radius: 50px; line-height: 1.7;
+    background-color: #050505;
+    transition: background-color 0.5s;
+}
+#wrap .quiz_bg .quiz .quiz_list #answer_form #check_btn:hover {
+    background-color: #FF7300;
+}
+#wrap .quiz_bg .quiz .quiz_status {
+    margin: 0 auto;
+    text-align: center;
+}
+#wrap .quiz_bg .quiz .quiz_status img {width: 100%;}
+#wrap .quiz_bg .quiz .quiz_status p {line-height: 1.7; font-size: 1.25rem; margin: 20px 0 0;}

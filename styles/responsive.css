@@ -1,5 +1,12 @@
 /* 반응형 조건 responsive */
 /* m(320~) -> t(1024~) -> d(1250~)  full == 100% */
+@media screen and (min-width:680px) {
+    /* ---------------------------------- 2. quiz */
+    #wrap .quiz_bg .quiz {flex-flow: row nowrap;/* t,d - row */}
+    #wrap .quiz_bg .quiz > * {flex: 1;}
+    /* #wrap .quiz_bg .quiz .quiz_list {width: 300px;}
+    #wrap .quiz_bg .quiz .quiz_status {flex: 1;} */
+}
 @media screen and (min-width:860px) {
     #wrap .intro {padding: 300px 0 100px;}
 }/* 860~1023 더 자연스럽게 만들기위한 임의 값 추가(피그마 x) */
@@ -11,6 +18,21 @@
     #wrap .container .sponsor_btn {width: 238px; height: 60px;}
     #wrap .container .sponsor_btn em {font-size: 1.38rem;}
     #wrap .container .sponsor_btn::after {font-size: 1rem;}
+    /* ---------------------------------- 2. quiz */
+    #wrap .quiz_bg {padding:150px 80px;}
+    #wrap .quiz_bg .quiz {gap: 142px;}
+    /* #wrap .quiz_bg .quiz .quiz_list {width: 400px;} */
+    #wrap .quiz_bg .quiz .quiz_list h1 {font-size: 2.50rem; margin-bottom: 56px;}
+    #wrap .quiz_bg .quiz .quiz_list h2 {margin-bottom: 16px;}
+    #wrap .quiz_bg .quiz .quiz_list h2 span {display: inline; font-size: 1.25rem;}
+    #wrap .quiz_bg .quiz .quiz_list #answer_form ul {margin-bottom: 37.83px;}
+    #wrap .quiz_bg .quiz .quiz_list #answer_form ul li {margin-bottom: 32px;}
+    #wrap .quiz_bg .quiz .quiz_list #answer_form ul li label {
+        font-size: 1.25rem;
+        /* display: block; line-height: 2; */
+        background-size: 28px; padding-left: 48px;
+    }
+    #wrap .quiz_bg .quiz .quiz_list #answer_form #check_btn {font-size: 1.25rem;}
 }/* 1024~1249 */
 @media screen and (min-width:1250px) {
     #wrap .intro {padding: 447px 0 100px;}
