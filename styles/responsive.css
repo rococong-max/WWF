@@ -9,6 +9,26 @@
 }
 @media screen and (min-width:860px) {
     #wrap .intro {padding: 300px 0 100px;}
+    #wrap .container .sponsor_btn {
+        width: 270px; height: 62px; border-radius: 50px;
+        font-size:1.38rem; font-weight: 700;
+    }
+    #wrap .container .sponsor_btn::after {font-size: 1.38rem;}
+    /* -------------------------------3~6행 공통 */
+    #wrap .container {padding:200px 80px;}
+    #wrap .container .contents h1 {font-size:2.5rem; margin: 0 0 40px;}
+    #wrap .container .contents h1+p {font-size:1.38rem; margin: 0 0 40px;}
+    /* ----------------------------------- 3행 */
+    #wrap .video_bg .video h1 {margin: 0 0 70px;}
+    #wrap .video_bg .video iframe {height: 484px;}
+    /* ----------------------------------- 5행 */
+    #wrap .hemanity_bg .hemanity h1+p {font-size: 1rem;}
+    #wrap .hemanity_bg .hemanity .list {flex-flow: row nowrap;}
+    #wrap .hemanity_bg .hemanity .list li {flex: 1;}
+    #wrap .hemanity_bg .hemanity .list li dl {height: 320px;}
+    #wrap .hemanity_bg .hemanity .list li dl dt {font-size: 2.69rem;}
+    #wrap .hemanity_bg .hemanity .list li .txt {height: 250px;}
+    #wrap .hemanity_bg .hemanity .list li .txt p {font-size: 1rem;}
 }/* 860~1023 더 자연스럽게 만들기위한 임의 값 추가(피그마 x) */
 @media screen and (min-width:1024px) {
     #wrap .intro {padding: 410px 0 100px;}
@@ -17,7 +37,7 @@
     #wrap .intro h1 span {font-size: 3.13rem;}
     #wrap .container .sponsor_btn {width: 238px; height: 60px;}
     #wrap .container .sponsor_btn em {font-size: 1.38rem;}
-    #wrap .container .sponsor_btn::after {font-size: 1rem;}
+    #wrap .container .sponsor_btn::after {font-size: 1.38rem;}
     /* ---------------------------------- 2. quiz */
     #wrap .quiz_bg {padding:150px 80px;}
     #wrap .quiz_bg .quiz {gap: 142px;}
@@ -33,6 +53,20 @@
         background-size: 28px; padding-left: 48px;
     }
     #wrap .quiz_bg .quiz .quiz_list #answer_form #check_btn {font-size: 1.25rem;}
+    /* -------------------------------------8행 */
+    #wrap .activity_bg .activity .detail {
+        grid-template-areas: 
+            'public nature'
+            'corporation nature';
+        grid-template-columns: 1fr 1fr;
+    }
+    #wrap .activity_bg .activity .detail li {padding-bottom:30px; position: relative;}
+    #wrap .activity_bg .activity .detail li .txt {width: 50%;}
+    #wrap .activity_bg .activity .detail li:nth-child(3) .txt {
+        position: absolute; bottom: 31px; left: 0;
+    }
+    /* #wrap .activity_bg .activity .detail li .txt dt {font-size: 2.13rem; font-weight: 700;} */
+    /* #wrap .activity_bg .activity .detail li .txt dd {font-size: 1.25rem;} */
 }/* 1024~1249 */
 @media screen and (min-width:1250px) {
     #wrap .intro {padding: 447px 0 100px;}
@@ -42,4 +76,10 @@
     #wrap .container .sponsor_btn {width: 409px; height: 71px;}
     #wrap .container .sponsor_btn em {font-size: 2.13rem; font-weight: 700;}
     #wrap .container .sponsor_btn::after {font-size: 2rem;}
+    /* --------------------------------3~6행 공통 */
+    #wrap .container .contents h1 {font-size:3.34rem; margin: 0 0 81px;}
+    #wrap .container .contents h1+p {font-size:2.13rem; margin: 0 0 81px;}
+    /* ------------------------------------5행 공통 */
+    #wrap .hemanity_bg .hemanity .list li dl dd {font-size: 1.25rem;}
+    #wrap .hemanity_bg .hemanity .list li .txt p {font-size: 1.25rem;}
 }/* 1250~max */
