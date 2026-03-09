@@ -29,6 +29,22 @@
     #wrap .hemanity_bg .hemanity .list li dl dt {font-size: 2.69rem;}
     #wrap .hemanity_bg .hemanity .list li .txt {height: 250px;}
     #wrap .hemanity_bg .hemanity .list li .txt p {font-size: 1rem;}
+    /* ------------------------------------7행 */
+    #wrap .wwf_bg .wwf p {font-size: 1.38rem; line-height: 1.5;}
+    /* ------------------------------------ 9행 */
+    #wrap .gift_bg .gift {text-align: right;}
+    #wrap .gift_bg .gift .title {flex-flow: row nowrap; align-items: flex-end; justify-content: space-between;}
+    #wrap .gift_bg .gift .title h1 {margin:0;}
+    #wrap .gift_bg .gift .gift_list {
+        grid-template-areas:
+            'month_2 month_3'
+            'month_5 month_5';
+        grid-template-columns: 1fr 1fr;
+        column-gap: 45px; row-gap: 22px;
+    }
+    #wrap .gift_bg .gift .gift_list li .g_img {height: 300px;}
+    /* ----------------------------10행 */
+    #wrap .guide_bg {padding:100px 80px;}
 }/* 860~1023 더 자연스럽게 만들기위한 임의 값 추가(피그마 x) */
 @media screen and (min-width:1024px) {
     #wrap .intro {padding: 410px 0 100px;}
@@ -65,10 +81,11 @@
     #wrap .activity_bg .activity .detail li:nth-child(3) .txt {
         position: absolute; bottom: 31px; left: 0;
     }
-    /* #wrap .activity_bg .activity .detail li .txt dt {font-size: 2.13rem; font-weight: 700;} */
-    /* #wrap .activity_bg .activity .detail li .txt dd {font-size: 1.25rem;} */
+    #wrap .activity_bg .activity .detail li .txt dt {font-size: 2.13rem; font-weight: 700;}
+    #wrap .activity_bg .activity .detail li .txt dd {font-size: 1.25rem;}
 }/* 1024~1249 */
 @media screen and (min-width:1250px) {
+    #wrap .container {padding: 400px 135px;}
     #wrap .intro {padding: 447px 0 100px;}
     #wrap .intro .logo {width: 42px; top: 53px; left: 61px;}
     #wrap .intro h1 span {font-size: 4.38rem;}
@@ -82,4 +99,22 @@
     /* ------------------------------------5행 공통 */
     #wrap .hemanity_bg .hemanity .list li dl dd {font-size: 1.25rem;}
     #wrap .hemanity_bg .hemanity .list li .txt p {font-size: 1.25rem;}
+    /* --------------------------- 7행 */
+    #wrap .wwf_bg .wwf p {font-size: 2.13rem;}
+    /* ----------------------------9행 */
+    #wrap .gift_bg .gift {text-align: center;}
+    #wrap .gift_bg .gift p {font-size: 1.25rem;}
+    #wrap .gift_bg .gift .title {margin-bottom: 70px;}
+    #wrap .gift_bg .gift .gift_list {
+        grid-template-areas:
+            'month_2 month_3 month_5';
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 45px; margin-bottom: 70px;
+    }
+    #wrap .gift_bg .gift .gift_list li h2,
+    #wrap .gift_bg .gift .gift_list li h2+p {font-size: 1.25rem;}
+    /* ----------------------------10행 */
+    #wrap .guide_bg {padding:100px 135px;}
+    #wrap .guide_bg .guide h2 {font-size: 2.13rem;}
+    #wrap .guide_bg .guide p {font-size: 1.25rem;}
 }/* 1250~max */
